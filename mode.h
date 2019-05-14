@@ -1303,5 +1303,16 @@ protected:
     const char *name4() const override { return "QUN"; }
 
 private:
+	Vector3f home{182.9,-304.8,100};
+	Vector3f payload_1{61,0,100};
+	Vector3f payload_2{182.9,-45.7,100};
+	Vector3f payload_3{304.9,-45.7,100};
+	Vector3f payload_4{426.8,-45.7,100};
+	Vector3f payload_5{548.8,-45.7,100};
+	Vector3f target;
+	
+	void qu_mission_start();
+    void go_to(int payload_num);
+	
 
 };
